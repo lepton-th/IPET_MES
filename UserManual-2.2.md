@@ -129,11 +129,11 @@ Production Orders (POs) dictate what the primary CNC machines should produce.
 
 * **Viewing Details:** Click the arrow button on the right side of any order to open the **Slide-out Details Panel**. This shows you exactly which CNC machines contributed to the output and lists all FlowTickets generated from this order.
 
-> ![](file:///D:/Pictures/Screenshots/Screenshot%202026-02-28%20133720.png)
+> ![](Screenshot%202026-02-28%20133720.png)
 > 
-> ![9425c710-3719-4268-8510-15bf3e13c416](file:///D:/Pictures/Typedown/9425c710-3719-4268-8510-15bf3e13c416.png)
+> ![9425c710-3719-4268-8510-15bf3e13c416](9425c710-3719-4268-8510-15bf3e13c416.png)
 > 
-> ![97aa97c7-b2bf-4dc0-b2b3-4153faec9aa5](file:///D:/Pictures/Typedown/97aa97c7-b2bf-4dc0-b2b3-4153faec9aa5.png)
+> ![97aa97c7-b2bf-4dc0-b2b3-4153faec9aa5](97aa97c7-b2bf-4dc0-b2b3-4153faec9aa5.png)
 
 ### 2.2 Running the Grouped MRP Engine
 
@@ -141,15 +141,15 @@ Production Orders (POs) dictate what the primary CNC machines should produce.
 
 * **Shared Inventory Deduction:** The system automatically subtracts Warehouse Stock, In-Transit POs, and Unused Shop Floor Stock before suggesting a "Net Amount to Buy".
 
-> ![](file:///D:/Pictures/Screenshots/Screenshot%202026-02-28%20134809.png)
+> ![](Screenshot%202026-02-28%20134809.png)
 
 ### 2.3 Issuing FlowTickets (Batching)
 
 * **Buffer Validation (System Control):** When generating a new ticket, the system checks the **Unallocated CNC Buffer**. You **cannot** issue a ticket for 500 pieces if the turning machines have only produced 400 pieces. The system strictly blocks this.
 
-> ![`[SCREENSHOT: TicketManagement.html showing the Ticket Generation Modal and Buffer Validation Error]`](file:///D:/Pictures/Typedown/0c608440-58cf-4ca2-b13d-043ccfa00426.png)
+> ![`[SCREENSHOT: TicketManagement.html showing the Ticket Generation Modal and Buffer Validation Error]`](0c608440-58cf-4ca2-b13d-043ccfa00426.png)
 > 
-> ![f7b5b365-d54b-4380-9c26-3e6d9bb4b43f](file:///D:/Pictures/Typedown/f7b5b365-d54b-4380-9c26-3e6d9bb4b43f.png)
+> ![f7b5b365-d54b-4380-9c26-3e6d9bb4b43f](f7b5b365-d54b-4380-9c26-3e6d9bb4b43f.png)
 
 ### 2.4 Issuing Rework Tickets (Exception Handling)
 
@@ -161,9 +161,9 @@ When defective parts (NG) are sent for rework, Engineering must first approve a 
 
 * **Print & Handover:** Print the generated ticket with the QR code and attach it to the physical bin of NG parts so the shop floor can begin the rework execution.
 
-> ![65cbdef6-ac22-4d98-b1b7-0c40f66d78a8](file:///D:/Pictures/Typedown/65cbdef6-ac22-4d98-b1b7-0c40f66d78a8.png)
+> ![65cbdef6-ac22-4d98-b1b7-0c40f66d78a8](65cbdef6-ac22-4d98-b1b7-0c40f66d78a8.png)
 > 
-> ![09b7fd5e-365c-4a55-a5d1-651f8c55709f](file:///D:/Pictures/Typedown/09b7fd5e-365c-4a55-a5d1-651f8c55709f.png)
+> ![09b7fd5e-365c-4a55-a5d1-651f8c55709f](09b7fd5e-365c-4a55-a5d1-651f8c55709f.png)
 
 ### 2.5 Issuing Packaging Directives (Priority Control)
 
@@ -177,7 +177,7 @@ Sometimes, finished goods pile up at the packaging station while logistics is wa
 
 * **Result:** This broadcasts a direct, flashing alert to the operator's Packaging Terminal, overriding their normal flow and directing them to pack those specific parts immediately.
 
-> ![eccec052-49b0-40cb-acd7-e5b620f58ed2](file:///D:/Pictures/Typedown/eccec052-49b0-40cb-acd7-e5b620f58ed2.png)
+> ![eccec052-49b0-40cb-acd7-e5b620f58ed2](eccec052-49b0-40cb-acd7-e5b620f58ed2.png)
 
 Chapter 3: Engineering Guide
 ----------------------------
@@ -190,19 +190,19 @@ Process Engineers define the rules of production.
 
 * **ECN Locking (System Control):** Once a Routing Version is marked `APPROVED`, it is permanently locked. To make changes, click **Create ECN** to clone it into a new `DRAFT` version.
 
-> ![8218c438-6f4a-48c5-8358-fa3ec080ce82](file:///D:/Pictures/Typedown/8218c438-6f4a-48c5-8358-fa3ec080ce82.png)
+> ![8218c438-6f4a-48c5-8358-fa3ec080ce82](8218c438-6f4a-48c5-8358-fa3ec080ce82.png)
 > 
-> ![efb7d93f-6102-4596-9192-07ddbbd63121](file:///D:/Pictures/Typedown/efb7d93f-6102-4596-9192-07ddbbd63121.png)
+> ![efb7d93f-6102-4596-9192-07ddbbd63121](efb7d93f-6102-4596-9192-07ddbbd63121.png)
 > 
-> ![de7a7b6c-6458-452f-ac90-e58f2a51ca59](file:///D:/Pictures/Typedown/de7a7b6c-6458-452f-ac90-e58f2a51ca59.png)
+> ![de7a7b6c-6458-452f-ac90-e58f2a51ca59](de7a7b6c-6458-452f-ac90-e58f2a51ca59.png)
 
 ### 3.2 Rework Design & Smart Matching
 
 * **Smart Match (System Control):** When operators submit defective parts, if the system detects that you have solved this exact Part + Defect combination before, it flashes an Emerald **"Preset Found"** alert. Click "Apply Preset" to instantly route it.
 
-> ![6b1e039b-2b60-40ce-aea7-4b1f1bfa0e80](file:///D:/Pictures/Typedown/6b1e039b-2b60-40ce-aea7-4b1f1bfa0e80.png)
+> ![6b1e039b-2b60-40ce-aea7-4b1f1bfa0e80](6b1e039b-2b60-40ce-aea7-4b1f1bfa0e80.png)
 > 
-> ![b5c698ab-c4a1-47e7-9299-5e2dedcfe527](file:///D:/Pictures/Typedown/b5c698ab-c4a1-47e7-9299-5e2dedcfe527.png)
+> ![b5c698ab-c4a1-47e7-9299-5e2dedcfe527](b5c698ab-c4a1-47e7-9299-5e2dedcfe527.png)
 
 Chapter 4: Shop Floor Operator Guide
 ------------------------------------
@@ -219,15 +219,15 @@ Before starting work, operators can view their personal dispatch list for the da
 
 * **Overview Mode:** Supervisors can select "All Machines" from the dropdown to see the live status of every machine stacked vertically, along with a unified timeline of the upcoming queue.
 
-> ![ce4ec6d5-fd7a-4123-8948-22908fa1bdb1](file:///D:/Pictures/Typedown/ce4ec6d5-fd7a-4123-8948-22908fa1bdb1.png)
+> ![ce4ec6d5-fd7a-4123-8948-22908fa1bdb1](ce4ec6d5-fd7a-4123-8948-22908fa1bdb1.png)
 > 
-> ![298511f3-d217-4f39-bc29-24701e6c2854](file:///D:/Pictures/Typedown/298511f3-d217-4f39-bc29-24701e6c2854.png)
+> ![298511f3-d217-4f39-bc29-24701e6c2854](298511f3-d217-4f39-bc29-24701e6c2854.png)
 
 ### 4.2 CNC Shift Report (Primary Machining)
 
 * **Action:** Because you cut from a continuous bar, you do not scan tickets. You select the Active Production Order and input your `OK`, `NG`, and `Scrap` totals at the end of the shift.
 
-> ![f5e9ce82-6aff-48e1-9fcc-b300e283137c](file:///D:/Pictures/Typedown/f5e9ce82-6aff-48e1-9fcc-b300e283137c.png)
+> ![f5e9ce82-6aff-48e1-9fcc-b300e283137c](f5e9ce82-6aff-48e1-9fcc-b300e283137c.png)
 
 ### 4.3 PDA Batch Terminal (Secondary Machining)
 
@@ -237,13 +237,13 @@ Before starting work, operators can view their personal dispatch list for the da
 
 * **Partial Batch Rule (System Control):** By default, if the previous station is only halfway done with their batch, the system locks your sequence until the previous machine finishes.
 
-> ![3579d65b-6a85-4dc2-81bd-59c827b58d21](file:///D:/Pictures/Typedown/3579d65b-6a85-4dc2-81bd-59c827b58d21.png)
+> ![3579d65b-6a85-4dc2-81bd-59c827b58d21](3579d65b-6a85-4dc2-81bd-59c827b58d21.png)
 
 ### 4.4 Requesting Rework
 
 * **FIFO Deduction (System Control):** You simply scan the Part Number and enter the NG quantity. The backend automatically deducts the parts using FIFO (First-In, First-Out) logic from the oldest holding ledgers.
 
-> ![c0655334-9562-41e1-9e9e-f22828216e0c](file:///D:/Pictures/Typedown/c0655334-9562-41e1-9e9e-f22828216e0c.png)
+> ![c0655334-9562-41e1-9e9e-f22828216e0c](c0655334-9562-41e1-9e9e-f22828216e0c.png)
 
 ### 4.5 Packaging Terminal
 
@@ -251,9 +251,9 @@ Before starting work, operators can view their personal dispatch list for the da
 
 * **Force Sealing (System Control):** If a box is only partially full but needs to be shipped, you must explicitly click **Force Seal Partial Box** to lock it.
 
-> ![a8dc559c-ce05-400e-a598-838cfeec9ba2](file:///D:/Pictures/Typedown/a8dc559c-ce05-400e-a598-838cfeec9ba2.png)
+> ![a8dc559c-ce05-400e-a598-838cfeec9ba2](a8dc559c-ce05-400e-a598-838cfeec9ba2.png)
 > 
-> ![677f1ec1-ab74-414c-9dba-2b96e7da8529](file:///D:/Pictures/Typedown/677f1ec1-ab74-414c-9dba-2b96e7da8529.png)
+> ![677f1ec1-ab74-414c-9dba-2b96e7da8529](677f1ec1-ab74-414c-9dba-2b96e7da8529.png)
 
 Chapter 5: APS Scheduler & Algorithm Guide
 ------------------------------------------
@@ -276,9 +276,9 @@ The APS uses **Simulated Annealing** to minimize penalties (Late Deliveries, Set
 
 * **Features:** The system scans 168 hours of data and alerts you to things like "High Setup Penalties" (suggesting order rearrangements) or predictive bottleneck warnings.
 
-> ![a9586317-e77f-4fda-8a02-66bfba075bff](file:///D:/Pictures/Typedown/a9586317-e77f-4fda-8a02-66bfba075bff.png)
+> ![a9586317-e77f-4fda-8a02-66bfba075bff](a9586317-e77f-4fda-8a02-66bfba075bff.png)
 > 
-> ![23d6ab31-5fa9-4aeb-9ebe-67d85394b06a](file:///D:/Pictures/Typedown/23d6ab31-5fa9-4aeb-9ebe-67d85394b06a.png)
+> ![23d6ab31-5fa9-4aeb-9ebe-67d85394b06a](23d6ab31-5fa9-4aeb-9ebe-67d85394b06a.png)
 
 ### 5.3 Daily Dispatch Plan & Export
 
@@ -288,7 +288,7 @@ The APS uses **Simulated Annealing** to minimize penalties (Late Deliveries, Set
 
 * **Export:** Click **Export CSV** to download the day's plan for supervisors.
 
-> ![b2950e06-09ae-4347-bd95-7bafc496724c](file:///D:/Pictures/Typedown/b2950e06-09ae-4347-bd95-7bafc496724c.png)
+> ![b2950e06-09ae-4347-bd95-7bafc496724c](b2950e06-09ae-4347-bd95-7bafc496724c.png)
 
 Chapter 6: Executive & Management Guide
 ---------------------------------------
@@ -301,7 +301,7 @@ Chapter 6: Executive & Management Guide
 
 * **First Pass Yield (FPY) Matrix:** Calculates the Rolled Throughput Yield automatically across multiple routing steps.
 
-> ![d7d29850-5460-4e35-ab6f-2debe868a123](file:///D:/Pictures/Typedown/d7d29850-5460-4e35-ab6f-2debe868a123.png)
+> ![d7d29850-5460-4e35-ab6f-2debe868a123](d7d29850-5460-4e35-ab6f-2debe868a123.png)
 
 Chapter 7: System Administrator Guide
 -------------------------------------
@@ -314,10 +314,8 @@ Chapter 7: System Administrator Guide
 
 * **RFID Enrollment:** Open User Management, select a worker, and use a USB RFID reader to scan their physical badge. This saves the Hex Code so they can log into PDAs without passwords.
 
-> ![64f80c7b-ede1-463a-9f47-d61fae5d3f0a](file:///D:/Pictures/Typedown/64f80c7b-ede1-463a-9f47-d61fae5d3f0a.png)
+> ![64f80c7b-ede1-463a-9f47-d61fae5d3f0a](64f80c7b-ede1-463a-9f47-d61fae5d3f0a.png)
 > 
-> ![05a4ecdd-5dd8-4dd9-addd-9f7f04fb217d](file:///D:/Pictures/Typedown/05a4ecdd-5dd8-4dd9-addd-9f7f04fb217d.png)
+> ![05a4ecdd-5dd8-4dd9-addd-9f7f04fb217d](05a4ecdd-5dd8-4dd9-addd-9f7f04fb217d.png)
 
 _End of Document_
-
-
